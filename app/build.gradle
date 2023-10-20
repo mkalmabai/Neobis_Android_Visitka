@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.neobis_android_visitka'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.neobis_android_visitka"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

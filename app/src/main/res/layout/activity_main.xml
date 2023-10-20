@@ -1,18 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/conatiner1"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@color/blackblue">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="283dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginStart="25dp">
+
+            <ImageView
+                android:id="@+id/photp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/photp_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/dr_novikov"
+                android:layout_width="158dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:gravity="bottom"
+                android:text="@string/dr_novikov"
+                android:textAppearance="@style/dr_novikov"
+                android:textColor="@color/white2"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/photp_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.202" />
+
+            <TextView
+                android:layout_width="158dp"
+                android:layout_height="35dp"
+                android:gravity="bottom"
+                android:text="@string/dentist"
+                android:textAppearance="@style/dr_novikov"
+                android:textColor="@color/white2"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/dr_novikov"
+                app:layout_constraintStart_toStartOf="@+id/dr_novikov"
+                app:layout_constraintEnd_toEndOf="@+id/dr_novikov" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

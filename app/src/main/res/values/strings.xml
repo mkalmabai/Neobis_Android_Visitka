@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Neobis_Android_Visitka</string>
+    <string name="dr_novikov">Dr. Novikov</string>
+    <string name="dentist">Dentist</string>
 </resources>
