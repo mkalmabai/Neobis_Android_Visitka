@@ -2,4 +2,9 @@
     <string name="app_name">Neobis_Android_Visitka</string>
     <string name="dr_novikov">Dr. Novikov</string>
     <string name="dentist">Dentist</string>
+    <string name="dental_clin">Dental Clinic</string>
+    <string name="your_friend">Your friendly Dental Friend</string>
+    <string name="our_locatio">Our Location</string>
+    <string name="shopping_ce">"Shopping center Asia Mall  1st floor "</string>
+    <string name="open_map">Open map</string>
 </resources>

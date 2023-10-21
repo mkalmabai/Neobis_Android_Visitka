@@ -3,4 +3,12 @@
     <style name="dr_novikov">
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="dental_clin">Halaney Demo</style>
+
+    <style name="your_friend">Open Sans</style>
+
+    <style name="our_locatio">Open Sans</style>
+
+    <style name="shopping_ce">Open Sans</style>
 </resources>
