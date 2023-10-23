@@ -5,6 +5,13 @@
     <string name="dental_clin">Dental Clinic</string>
     <string name="your_friend">Your friendly Dental Friend</string>
     <string name="our_locatio">Our Location</string>
-    <string name="shopping_ce">"Shopping center Asia Mall  1st floor "</string>
-    <string name="open_map">Open map</string>
+    <string name="shopping_ce">Shopping center Asia Mall  1st floor</string>
+    <string name="open_map"> <u>Open map</u> </string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="mail">Email</string>
+    <string name="Visitwebsite">Visit website</string>
+    <string name="tocall">To call</string>
+    <string name="telegram">Telegram</string>
+    <string name="save_contact">Save contact</string>
+    <string name="some_id">Doctors</string>
 </resources>

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="dr_novikov">
-        <item name="android:textStyle">bold</item>
+
+    <style name="halaney_demo">
+        <item name="android:fontFamily">@font/halaney_demo</item>
+        <item name="android:textColor">@color/blackblue</item>
+    </style>
+    <style name="open_sans">
+        <item name="android:fontFamily">@font/opensans</item>
+        <item name="android:textColor">@color/blackblue</item>
+    </style>
+    <style name="open_sansbold">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="dental_clin">Halaney Demo</style>
 
-    <style name="your_friend">Open Sans</style>
-
-    <style name="our_locatio">Open Sans</style>
-
-    <style name="shopping_ce">Open Sans</style>
 </resources>
