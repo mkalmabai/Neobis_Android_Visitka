@@ -14,4 +14,23 @@
     <string name="telegram">Telegram</string>
     <string name="save_contact">Save contact</string>
     <string name="some_id">Doctors</string>
+
+
+
+
+    <string name="azamat">Dr.Novikov</string>
+    <string name="azamat_profession" >Dentist</string>
+    <string name="azamat_Number" >+77757777777</string>
+    <string name="azamat_mail" >azamat1234@gmail.com</string>
+
+
+    <string name="zamir">Nurmatov Zamir</string>
+    <string name="zamir_profession" >Dentist</string>
+    <string name="zamir_Number" >+77757777777</string>
+    <string name="zamir_mail" >zamir1234@gmail.com</string>
+
+    <string name="munisa">Khalilova Munisa</string>
+    <string name="munisa_profession" >Dentist</string>
+    <string name="munisa_Number" >+77757777777</string>
+    <string name="munisa_mail" >munisa1234@gmail.com</string>
 </resources>
