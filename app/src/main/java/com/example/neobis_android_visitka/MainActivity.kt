@@ -29,8 +29,27 @@ class MainActivity : AppCompatActivity() {
                     getString(R.string.azamat_profession),
                     getString(R.string.azamat_Number),
                     getString(R.string.azamat_mail),
-                    R.drawable.telegramicon, ) }
-
+                    R.drawable.ph2,
+                    getString(R.string.azamat_website),
+                    getString(R.string.azamat_telegram),) }
+            binding.doctor2.setOnClickListener {
+                handleClick(
+                    getString(R.string.zamir),
+                    getString(R.string.zamir_profession),
+                    getString(R.string.zamir_Number),
+                    getString(R.string.zamir_mail),
+                    R.drawable.ph3,
+                    getString(R.string.zamir_website),
+                    getString(R.string.zamir_telegram),) }
+            binding.doctor3.setOnClickListener {
+                handleClick(
+                    getString(R.string.munisa),
+                    getString(R.string.munisa_profession),
+                    getString(R.string.munisa_Number),
+                    getString(R.string.munisa_mail),
+                    R.drawable.ph1,
+                    getString(R.string.munisa_website),
+                    getString(R.string.munisa_telegram),) }
         }
 
         private fun handleClick(surname: String,
@@ -38,6 +57,8 @@ class MainActivity : AppCompatActivity() {
                                 phoneNumber: String,
                                 mail: String,
                                 icon: Int,
+                                website:String,
+                                username_telegram:String,
                                 ) {
             val intent = Intent(this, Detail_activity::class.java).apply {
                 putExtra("name", surname)
@@ -45,6 +66,8 @@ class MainActivity : AppCompatActivity() {
                 putExtra("phoneNumber", phoneNumber)
                 putExtra("mail", mail)
                 putExtra("icon", icon)
+                putExtra("website", website)
+                putExtra("username_telegram", username_telegram)
 
             }
             startActivity(intent)

@@ -22,15 +22,21 @@
     <string name="azamat_profession" >Dentist</string>
     <string name="azamat_Number" >+77757777777</string>
     <string name="azamat_mail" >azamat1234@gmail.com</string>
+    <string name="azamat_telegram">azamat_323</string>
+    <string name="azamat_website">https://www.clinic.azamat.com</string>
 
 
-    <string name="zamir">Nurmatov Zamir</string>
-    <string name="zamir_profession" >Dentist</string>
-    <string name="zamir_Number" >+77757777777</string>
+    <string name="zamir">Dr.Zamir</string>
+    <string name="zamir_profession" >Surgeon</string>
+    <string name="zamir_Number" >+77758884844</string>
     <string name="zamir_mail" >zamir1234@gmail.com</string>
+    <string name="zamir_telegram">zamir_323</string>
+    <string name="zamir_website">https://www.clinic.zamir.com</string>
 
-    <string name="munisa">Khalilova Munisa</string>
-    <string name="munisa_profession" >Dentist</string>
-    <string name="munisa_Number" >+77757777777</string>
+    <string name="munisa">Dr.Munisa</string>
+    <string name="munisa_profession" >Nurse</string>
+    <string name="munisa_Number" >+77753442865</string>
     <string name="munisa_mail" >munisa1234@gmail.com</string>
+    <string name="munisa_telegram">munisa_323</string>
+    <string name="munisa_website">https://www.clinic.munisa.com</string>
 </resources>

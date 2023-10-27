@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/some_id"
+                android:text="Novikov Azamat"
                 android:textAppearance="@style/open_sansbold"
                 android:gravity="left|center_vertical"
                 android:textSize="19sp"
@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/some_id"
+                android:text="Nurmatov Zamir"
                 android:textAppearance="@style/open_sansbold"
                 android:gravity="left|center_vertical"
                 android:textSize="19sp"
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/some_id"
+                android:text="Khalilova Munisa"
                 android:textAppearance="@style/open_sansbold"
                 android:gravity="left|center_vertical"
                 android:textSize="19sp"
