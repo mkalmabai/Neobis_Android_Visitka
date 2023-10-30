@@ -6,22 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ECEFF8"
-    tools:context=".Detail_activity">
+    tools:context=".DetailActivity">
 
-    <LinearLayout
-        android:id="@+id/conatiner1"
-        android:layout_width="match_parent"
-        android:layout_height="174dp"
-        android:background="@color/blackblue">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="283dp"
-            android:layout_height="106dp"
-            android:layout_marginTop="49dp"
-            android:layout_marginStart="25dp">
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingVertical="25dp"
+            android:paddingEnd="60dp"
+            android:background="@color/blackblue"
+            >
             <ImageView
-                android:id="@+id/photp_2"
+                android:id="@+id/photoProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/photp_2"
@@ -34,7 +30,6 @@
                 android:id="@+id/namedoctor"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
-                android:layout_marginStart="12dp"
                 android:gravity="bottom"
                 android:text="@string/dr_novikov"
                 android:textAppearance="@style/open_sansbold"
@@ -42,7 +37,7 @@
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/photp_2"
+                app:layout_constraintStart_toEndOf="@+id/photoProfile"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.202" />
 
@@ -61,59 +56,60 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </LinearLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/logoholder"
-        android:layout_width="215dp"
-        android:layout_height="74dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="129dp"
-        android:layout_marginTop="30dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
         <ImageView
+            android:id="@+id/companyLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/copanylogo"
             app:layout_constraintStart_toStartOf="@id/logoholder"
-            app:layout_constraintTop_toTopOf="@id/logoholder"/>
+            app:layout_constraintTop_toTopOf="@id/logoholder" />
+
         <TextView
-            android:id="@+id/dental_clin"
+            android:id="@+id/dentalClinText"
             android:layout_width="100dp"
             android:layout_height="32dp"
+            android:layout_marginStart="35dp"
+            android:gravity="bottom"
             android:text="@string/dental_clin"
             android:textAppearance="@style/halaney_demo"
             android:textSize="20sp"
-            android:gravity="bottom"
-            app:layout_constraintBottom_toTopOf="@id/your_friend"
-            app:layout_constraintEnd_toEndOf="@id/your_friend"
-            />
+            app:layout_constraintBottom_toTopOf="@id/LogoText"
+            app:layout_constraintStart_toEndOf="@id/companyLogo" />
+
         <TextView
-            android:id="@+id/your_friend"
+            android:id="@+id/LogoText"
             android:layout_width="wrap_content"
-            android:layout_height="16dp"
-            android:layout_marginLeft="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="58dp"
+            android:gravity="bottom"
             android:text="@string/your_friend"
             android:textAppearance="@style/open_sans"
             android:textSize="12sp"
-            android:gravity="bottom"
-            app:layout_constraintEnd_toEndOf="@id/logoholder"
             app:layout_constraintBottom_toBottomOf="@id/logoholder"
-            />
+            app:layout_constraintStart_toEndOf="@id/companyLogo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <GridLayout
+        android:id="@+id/option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="3"
         android:rowCount="2"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginVertical="36dp"
+        android:layout_marginVertical="30dp"
         >
 
         <LinearLayout
-            android:id="@+id/tocall_vidget"
+            android:id="@+id/phoneButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="center"
@@ -124,7 +120,7 @@
             android:layout_margin="4dp">
 
             <ImageView
-                android:id="@+id/image_call"
+                android:id="@+id/phoneImage"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="6dp"
@@ -141,7 +137,7 @@
                 />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/whatsapp_vidget"
+            android:id="@+id/whatsappButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="center"
@@ -152,7 +148,7 @@
             android:layout_margin="4dp">
 
             <ImageView
-                android:id="@+id/image_whatsapp"
+                android:id="@+id/whatsappImage"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="6dp"
@@ -169,7 +165,7 @@
                 />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/mail_vidget"
+            android:id="@+id/emailButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="center"
@@ -181,7 +177,7 @@
             >
 
             <ImageView
-                android:id="@+id/image_mail"
+                android:id="@+id/emailImage"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="6dp"
@@ -197,7 +193,7 @@
                 android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/website_vidget"
+            android:id="@+id/websiteButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="center"
@@ -208,7 +204,7 @@
             android:layout_margin="4dp">
 
             <ImageView
-                android:id="@+id/image_website"
+                android:id="@+id/websiteImage"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="6dp"
@@ -224,7 +220,7 @@
                 android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/telegram_vidget"
+            android:id="@+id/telegramButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="center"
@@ -235,7 +231,7 @@
             android:layout_margin="4dp">
 
             <ImageView
-                android:id="@+id/image_telegram"
+                android:id="@+id/telegramImage"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="6dp"
@@ -251,7 +247,7 @@
                 android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/contact_vidget"
+            android:id="@+id/saveContactButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:gravity="center"
@@ -262,7 +258,7 @@
             android:layout_margin="4dp">
 
             <ImageView
-                android:id="@+id/image_contact"
+                android:id="@+id/saveContactImage"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="6dp"
@@ -285,12 +281,12 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/locationholder"
-        android:layout_width="197dp"
+        android:id="@+id/locationHolder"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp">
         <TextView
-            android:id="@+id/our_locatio"
+            android:id="@+id/textLocation"
             android:layout_width="121dp"
             android:layout_height="25dp"
             android:text="@string/our_locatio"
@@ -298,32 +294,31 @@
             android:textColor="@color/blackblue"
             android:gravity="bottom"
             android:textSize="25sp"
-            app:layout_constraintTop_toTopOf="@id/locationholder"
-            app:layout_constraintStart_toStartOf="@id/locationholder"
+            app:layout_constraintTop_toTopOf="@id/locationHolder"
+            app:layout_constraintStart_toStartOf="@id/locationHolder"
             />
         <TextView
-            android:id="@+id/shopping_ce"
+            android:id="@+id/textAddress"
             android:layout_width="197dp"
             android:layout_height="44dp"
             android:text="@string/shopping_ce"
             android:textAppearance="@style/open_sans"
             android:gravity="bottom"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/our_locatio"
-            app:layout_constraintStart_toStartOf="@+id/locationholder"
+            app:layout_constraintTop_toBottomOf="@id/textLocation"
+            app:layout_constraintStart_toStartOf="@+id/locationHolder"
             />
         <TextView
-            android:id="@+id/open_map"
+            android:id="@+id/mapButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/open_map"
-            android:gravity="bottom"
             android:textAppearance="@style/open_sansbold"
             android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@id/shopping_ce"
-            app:layout_constraintStart_toStartOf="@+id/locationholder"
+            app:layout_constraintTop_toBottomOf="@id/textAddress"
+            app:layout_constraintStart_toStartOf="@+id/locationHolder"
             android:textSize="14sp"
-            android:textColor="#924883"
+            android:textColor="@color/purple"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

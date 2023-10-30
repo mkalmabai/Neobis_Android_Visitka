@@ -6,115 +6,112 @@
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".MainActivity">
-    <LinearLayout
+
+    <TextView
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:background="@color/white"
-        android:layout_marginVertical="14dp">
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginVertical="18dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginStart="15dp"
-        android:text="@string/some_id"
+        android:text="@string/doctorsName"
         android:textAppearance="@style/open_sansbold"
         android:textColor="@color/black"
         android:textSize="30sp"
+        android:paddingStart="18dp"
         />
-    </LinearLayout>
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:orientation="vertical">
-        <LinearLayout
+
+        <TextView
             android:id="@+id/doctor1"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="match_parent"
             android:background="@color/blue2"
             android:orientation="horizontal"
-            android:layout_marginVertical="6dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Novikov Azamat"
-                android:textAppearance="@style/open_sansbold"
-                android:gravity="left|center_vertical"
-                android:textSize="19sp"
-                android:layout_marginStart="14dp"
-                />
-        </LinearLayout>
-
-        <LinearLayout
+            android:layout_marginVertical="6dp"
+            android:text="Novikov Azamat"
+            android:textAppearance="@style/open_sansbold"
+            android:gravity="left|center_vertical"
+            android:textSize="19sp"
+            android:paddingVertical="16dp"
+            android:paddingStart="14dp"
+            />
+        <TextView
             android:id="@+id/doctor2"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="match_parent"
             android:background="@color/blue2"
             android:orientation="horizontal"
-            android:layout_marginVertical="6dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Nurmatov Zamir"
-                android:textAppearance="@style/open_sansbold"
-                android:gravity="left|center_vertical"
-                android:textSize="19sp"
-                android:layout_marginStart="14dp"
-                />
-        </LinearLayout>
-        <LinearLayout
+            android:layout_marginVertical="6dp"
+            android:text="Nurmatov Zamir"
+            android:textAppearance="@style/open_sansbold"
+            android:gravity="left|center_vertical"
+            android:textSize="19sp"
+            android:paddingVertical="16dp"
+            android:paddingStart="14dp"
+            />
+        <TextView
             android:id="@+id/doctor3"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="match_parent"
             android:background="@color/blue2"
             android:orientation="horizontal"
-            android:layout_marginVertical="6dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Khalilova Munisa"
-                android:textAppearance="@style/open_sansbold"
-                android:gravity="left|center_vertical"
-                android:textSize="19sp"
-                android:layout_marginStart="14dp"
-                />
-        </LinearLayout>
-        <LinearLayout
+            android:layout_marginVertical="6dp"
+            android:text="Khalilova Munisa"
+            android:textAppearance="@style/open_sansbold"
+            android:gravity="left|center_vertical"
+            android:textSize="19sp"
+            android:paddingVertical="16dp"
+            android:paddingStart="14dp"
+            />
+        <TextView
             android:id="@+id/doctor4"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="match_parent"
             android:background="@color/blue2"
             android:orientation="horizontal"
-            android:layout_marginVertical="6dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/some_id"
-                android:textAppearance="@style/open_sansbold"
-                android:gravity="left|center_vertical"
-                android:textSize="19sp"
-                android:layout_marginStart="14dp"
-                />
-        </LinearLayout>
-        <LinearLayout
+            android:layout_marginVertical="6dp"
+            android:text="Nurkanat Rayymkhan"
+            android:textAppearance="@style/open_sansbold"
+            android:gravity="left|center_vertical"
+            android:textSize="19sp"
+            android:paddingVertical="16dp"
+            android:paddingStart="14dp"
+            />
+        <TextView
             android:id="@+id/doctor5"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="match_parent"
             android:background="@color/blue2"
             android:orientation="horizontal"
-            android:layout_marginVertical="6dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/some_id"
-                android:textAppearance="@style/open_sansbold"
-                android:gravity="left|center_vertical"
-                android:textSize="19sp"
-                android:layout_marginStart="14dp"
-                />
-        </LinearLayout>
+            android:layout_marginVertical="6dp"
+            android:text="@string/doctorsName"
+            android:textAppearance="@style/open_sansbold"
+            android:gravity="left|center_vertical"
+            android:textSize="19sp"
+            android:paddingVertical="16dp"
+            android:paddingStart="14dp"
+            />
+        <TextView
+            android:id="@+id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue2"
+            android:orientation="horizontal"
+            android:layout_marginVertical="6dp"
+            android:text="@string/doctorsName"
+            android:textAppearance="@style/open_sansbold"
+            android:gravity="left|center_vertical"
+            android:textSize="19sp"
+            android:paddingVertical="16dp"
+            android:paddingStart="14dp"
+            />
     </LinearLayout>
 
 </LinearLayout>

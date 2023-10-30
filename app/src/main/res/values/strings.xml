@@ -13,8 +13,8 @@
     <string name="tocall">To call</string>
     <string name="telegram">Telegram</string>
     <string name="save_contact">Save contact</string>
-    <string name="some_id">Doctors</string>
-
+    <string name="doctorsName">Doctors</string>
+    <string name="geolocation">51.097488,71.414143</string>
 
 
 
@@ -39,4 +39,11 @@
     <string name="munisa_mail" >munisa1234@gmail.com</string>
     <string name="munisa_telegram">munisa_323</string>
     <string name="munisa_website">https://www.clinic.munisa.com</string>
+
+    <string name="nuka">Dr.Nurkanat</string>
+    <string name="nuka_profession" >Surgeon</string>
+    <string name="nuka_Number" >+77771877054</string>
+    <string name="nuka_mail" >nuka1234@gmail.com</string>
+    <string name="nuka_telegram">nuka_323</string>
+    <string name="nuka_website">https://www.clinic.nuka.com</string>
 </resources>

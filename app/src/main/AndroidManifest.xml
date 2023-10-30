@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Neobis_Android_Visitka"
         tools:targetApi="31">
         <activity
-            android:name=".Detail_activity"
+            android:name=".DetailActivity"
             android:exported="false"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity

@@ -1,6 +1,4 @@
 package com.example.neobis_android_visitka
-
-
 import android.content.Intent
 import android.net.wifi.ScanResult.InformationElement
 import androidx.appcompat.app.AppCompatActivity
@@ -12,9 +10,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import com.example.neobis_android_visitka.databinding.ActivityDetailBinding
 import com.example.neobis_android_visitka.databinding.ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
-    private val TAG: String = "MainActivity";
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +46,15 @@ class MainActivity : AppCompatActivity() {
                     R.drawable.ph1,
                     getString(R.string.munisa_website),
                     getString(R.string.munisa_telegram),) }
+            binding.doctor4.setOnClickListener {
+                handleClick(
+                    getString(R.string.nuka),
+                    getString(R.string.nuka_profession),
+                    getString(R.string.nuka_Number),
+                    getString(R.string.nuka_mail),
+                    R.drawable.ph3,
+                    getString(R.string.nuka_website),
+                    getString(R.string.nuka_telegram),) }
         }
 
         private fun handleClick(surname: String,
@@ -60,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                                 website:String,
                                 username_telegram:String,
                                 ) {
-            val intent = Intent(this, Detail_activity::class.java).apply {
+            val intent = Intent(this, DetailActivity::class.java).apply {
                 putExtra("name", surname)
                 putExtra("profession", profession)
                 putExtra("phoneNumber", phoneNumber)
@@ -68,7 +73,6 @@ class MainActivity : AppCompatActivity() {
                 putExtra("icon", icon)
                 putExtra("website", website)
                 putExtra("username_telegram", username_telegram)
-
             }
             startActivity(intent)
         }
